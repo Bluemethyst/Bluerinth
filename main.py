@@ -1,7 +1,8 @@
 import requests
 headers = {
     'application/json'
-    'query': 'gravestone'
+    'query': 'gravestone',
+    'User-Agent': 'https://github.com/Bluemethyst/ModrinthDiscordBot'
 }
 
 r = requests.get('https://api.modrinth.com/search/', headers = headers)
